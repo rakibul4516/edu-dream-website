@@ -14,7 +14,6 @@ const AuthProvider = ({ children }) => {
         //create user register
 
         const RegisterUser = (email, password) => {
-            setLoader(true)
             return createUserWithEmailAndPassword(auth, email, password)
         }
     
@@ -39,6 +38,7 @@ const AuthProvider = ({ children }) => {
     
         //Logout
         const signOutUser = () => {
+            setLoader(true)
             signOut(auth).then(() => {
                 console.log("logOut succesfully")
             })
@@ -57,10 +57,10 @@ const AuthProvider = ({ children }) => {
      
     const AuthInfo = {
         user,
-        loader,
         RegisterUser,
         LoginUser,
         signOutUser,
+        loader,
     }
 
     return (
