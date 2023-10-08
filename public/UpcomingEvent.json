@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Web Development Workshop",
+        "user_image": "user1.jpg",
+        "date": "12 May",
+        "start_time": "10:00 AM",
+        "end_time": "3:00 PM",
+        "location": "123 Main Street, California, USA",
+        "description": "Join us for an immersive Web Development Workshop on 12 May. This event is designed to take your coding skills to the next level. From HTML and CSS basics to JavaScript and beyond, our expert instructors will guide you through the essentials of web development. Whether you're a beginner or looking to refine your skills, this workshop is a great opportunity to learn and network with fellow enthusiasts. Don't miss out on this chance to expand your web development knowledge!"
+    },
+    {
+        "id": 2,
+        "title": "Digital Marketing Seminar",
+        "user_image": "user2.jpg",
+        "date": "10 Jun",
+        "start_time": "9:30 AM",
+        "end_time": "12:30 PM",
+        "location": "456 Market Square, New York, USA",
+        "description": "Explore the dynamic world of digital marketing at our seminar on 10 Jun. Our seasoned professionals will delve into the latest trends, strategies, and tools that can help your business thrive in the digital landscape. From SEO and social media to content marketing and analytics, we'll cover it all. Join us at Market Square for a morning of insights and networking. Get ready to boost your online presence and stay ahead in the digital marketing game!"
+    },
+    {
+        "id": 3,
+        "title": "Machine Learning Bootcamp",
+        "user_image": "user3.jpg",
+        "date": "20 Jul",
+        "start_time": "11:00 AM",
+        "end_time": "5:00 PM",
+        "location": "789 Tech Park Avenue, Texas, USA",
+        "description": "Dive into the exciting realm of machine learning on 20 Jul. Our intensive bootcamp will equip you with the skills needed to develop intelligent algorithms and models. From supervised to unsupervised learning, you'll gain hands-on experience in this rapidly evolving field. Located at Tech Park Avenue, this event is perfect for aspiring data scientists and AI enthusiasts. Don't miss this opportunity to immerse yourself in the world of machine learning and artificial intelligence!"
+    },
+    {
+        "id": 4,
+        "title": "Language Learning Workshop",
+        "user_image": "user4.jpg",
+        "date": "15 Aug",
+        "start_time": "2:00 PM",
+        "end_time": "4:30 PM",
+        "location": "101 Language Center, Florida, USA",
+        "description": "Join our Language Learning Workshop on 15 Aug and embark on a journey to master a new language. Whether you're interested in French, Spanish, Mandarin, or any other language, our workshop provides a supportive environment for learners of all levels. Located at the Language Center in Florida, this event promises engaging activities and practical language skills development. Enrich your cultural awareness and communication abilities by joining us for this educational and fun-filled workshop!"
+    },
+    {
+        "id": 5,
+        "title": "Financial Literacy Seminar",
+        "user_image": "user5.jpg",
+        "date": "05 Sep",
+        "start_time": "6:00 PM",
+        "end_time": "8:00 PM",
+        "location": "222 Finance Street, Illinois, USA",
+        "description": "Enhance your financial knowledge at the Financial Literacy Seminar on 05 Sep. Discover essential money management principles, investment strategies, and tips for securing your financial future. Held at Finance Street in Illinois, this seminar is open to anyone seeking to make informed financial decisions. Learn from industry experts and gain insights that will help you navigate the complex world of finance with confidence!"
+    },
+    {
+        "id": 6,
+        "title": "Artificial Intelligence Workshop",
+        "user_image": "user6.jpg",
+        "date": "18 Oct",
+        "start_time": "9:00 AM",
+        "end_time": "4:00 PM",
+        "location": "555 AI Avenue, California, USA",
+        "description": "Dive deep into the world of Artificial Intelligence (AI) at our workshop on 18 Oct. Located at AI Avenue in California, this event is designed for tech enthusiasts, data scientists, and AI professionals. Explore AI applications, deep learning, neural networks, and more. Our workshop offers hands-on experience and expert guidance to help you harness the power of AI for various domains. Whether you're a novice or an AI practitioner, this workshop will expand your understanding and skillset in the realm of artificial intelligence. Join us for a day of AI exploration and innovation!"
+    }
+]

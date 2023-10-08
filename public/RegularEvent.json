@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "title": "Data Analytics Workshop",
+      "description": "Unlock the power of data with our Data Analytics Workshop on [Date]. Dive into the world of data-driven decision-making and gain essential skills to analyze and interpret data effectively. This hands-on workshop covers data collection, cleaning, visualization, and statistical analysis, equipping you with the tools to extract valuable insights. Led by industry experts at [Location], this workshop provides a comprehensive understanding of data analytics techniques and best practices. Whether you're a beginner looking to enter the field or a professional seeking to enhance your data analysis skills, this event is your pathway to harnessing data's potential. Join us for a day of discovery and innovation in the realm of data analytics!",
+      "price": "$199",
+      "date": "2023-11-15",
+      "views": 350,
+      "image": "https://i.ibb.co/yXZdDqc/pexels-kampus-production-5940828.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Coding Bootcamp",
+      "description": "Are you ready to embark on a coding journey that can transform your career? Join our Coding Bootcamp, a dynamic and intensive program designed to equip you with the essential skills to excel in the world of programming. Taking place on [Date], our bootcamp covers a wide range of languages and technologies, from Python and JavaScript to web development and app creation. Led by experienced instructors, this immersive experience will empower you to tackle real-world coding challenges. Located at [Location], our bootcamp provides a supportive and collaborative environment to help you thrive. Whether you're a beginner or looking to advance your coding skills, this event is your gateway to a successful career in tech.",
+      "price": "$799",
+      "date": "2023-10-25",
+      "views": 500,
+      "image": "https://i.ibb.co/gjFgBxc/pexels-kampus-production-7983589.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Digital Marketing Seminar",
+      "description": "Explore the dynamic world of digital marketing at our seminar on 10 Jun. Our seasoned professionals will delve into the latest trends, strategies, and tools that can help your business thrive in the digital landscape. From SEO and social media to content marketing and analytics, we'll cover it all. Join us at Market Square for a morning of insights and networking. Get ready to boost your online presence and stay ahead in the digital marketing game!",
+      "price": "$99",
+      "date": "2023-12-05",
+      "views": 250,
+      "image": "https://i.ibb.co/BtZMdK6/pexels-henri-mathieusaintlaurent-8349431.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Financial Planning Workshop",
+      "description": "Enhance your financial knowledge at the Financial Literacy Seminar on 05 Sep. Discover essential money management principles, investment strategies, and tips for securing your financial future. Held at Finance Street in Illinois, this seminar is open to anyone seeking to make informed financial decisions. Learn from industry experts and gain insights that will help you navigate the complex world of finance with confidence!",
+      "price": "$149",
+      "date": "2023-11-30",
+      "views": 300,
+      "image": "https://i.ibb.co/z2h4v7K/pexels-rdne-stock-project-7551454.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Machine Learning Masterclass",
+      "description": "Our intensive bootcamp will equip you with the skills needed to develop intelligent algorithms and models. From supervised to unsupervised learning, you'll gain hands-on experience in this rapidly evolving field. Located at Tech Park Avenue, this event is perfect for aspiring data scientists and AI enthusiasts. Don't miss this opportunity to immerse yourself in the world of machine learning and artificial intelligence!",
+      "price": "$299",
+      "date": "2023-11-10",
+      "views": 450,
+      "image": "https://i.ibb.co/JkHGPSS/pexels-vanessa-loring-7869245.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Leadership Development Summit",
+      "description": "Join us for the Leadership Development Summit, a transformative event designed to nurture and empower future leaders. Scheduled for [Date], this summit brings together seasoned executives, motivational speakers, and leadership experts to share their insights and strategies for success. Dive into topics such as effective communication, decision-making, team building, and personal growth. Located at [Location], this summit offers a unique opportunity to network with like-minded individuals and gain valuable leadership skills.Don't miss this chance to elevate your leadership journey!",
+      "price": "$199",
+      "date": "2023-12-20",
+      "views": 400,
+      "image": "https://i.ibb.co/khM1BT9/pexels-keira-burton-6146960.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Artificial Intelligence Workshop",
+      "description": "Located at AI Avenue in California, this event is designed for tech enthusiasts, data scientists, and AI professionals. Explore AI applications, deep learning, neural networks, and more. Our workshop offers hands-on experience and expert guidance to help you harness the power of AI for various domains. Whether you're a novice or an AI practitioner, this workshop will expand your understanding and skillset in the realm of artificial intelligence. Join us for a day of AI exploration and innovation!",
+      "price": "$249",
+      "date": "2023-10-30",
+      "views": 300,
+      "image": "https://i.ibb.co/s5j8L70/2.png"
+    },
+    {
+      "id": 8,
+      "title": "Project Management Methodologies",
+      "description": "Discover the keys to successful project management at our Project Management Methodologies Workshop. Taking place on [Date], this event is your gateway to mastering proven project management frameworks and methodologies. Whether you're a seasoned project manager or new to the field, this workshop covers a range of methodologies such as Agile, Waterfall, Scrum, and more. Learn how to tailor your approach to fit your organization's unique needs and achieve project success. Located at [Location], our workshop provides a platform for collaboration and knowledge sharing among project management professionals.",
+      "price": "$399",
+      "date": "2023-11-20",
+      "views": 350,
+      "image": "https://i.ibb.co/hBsg7Lv/pexels-kampus-production-7983574.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Language Learning Intensive",
+      "description": "IJoin our Language Learning Workshop and embark on a journey to master a new language. Whether you're interested in French, Spanish, Mandarin, or any other language, our workshop provides a supportive environment for learners of all levels. Located at the Language Center in Florida, this event promises engaging activities and practical language skills development. Enrich your cultural awareness and communication abilities by joining us for this educational and fun-filled workshop!",
+      "price": "$149",
+      "date": "2023-12-10",
+      "views": 200,
+      "image": "https://i.ibb.co/6YZvkKD/pexels-henri-mathieusaintlaurent-8349233.jpg"
+    }
+  ]
