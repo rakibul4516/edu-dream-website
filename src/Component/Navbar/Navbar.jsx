@@ -13,7 +13,7 @@ const Navbar = () => {
             <NavLink to='/contact' className=''>Contact</NavLink>
             {
                 user ? <><NavLink to='/purchase' className=''>Purchase</NavLink>
-                    <NavLink to='/contact' className=' '>Update Profile</NavLink></> : null
+                    <NavLink to='/story' className=' '>Story</NavLink></> : null
             }
         </div>
     </>

@@ -9,6 +9,7 @@ import EventDetails from "./Component/EventDetails";
 import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 import ErrorPage from "./Component/ErrorPage/ErrorPage";
 import PurchaseItem from "./Component/PurchaseItem/PurchaseItem";
+import Story from "./Component/Story/Story";
 
 const Routes = createBrowserRouter([
     {
@@ -50,8 +51,8 @@ const Routes = createBrowserRouter([
                     </PrivateRoute>,
             },
             {
-                path: '/contact',
-                element: <Contact />,
+                path: '/story',
+                element: <PrivateRoute><Story></Story></PrivateRoute>,
             },
         ]
     },

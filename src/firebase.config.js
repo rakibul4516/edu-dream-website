@@ -6,12 +6,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDYFX2RkxgiQzHgJImKwua7aI-ysxRPzk8",
-  authDomain: "edudream-ff341.firebaseapp.com",
-  projectId: "edudream-ff341",
-  storageBucket: "edudream-ff341.appspot.com",
-  messagingSenderId: "646021740508",
-  appId: "1:646021740508:web:5584eb783d436eda978119"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
