@@ -6,7 +6,7 @@ import UpcomingEvent from "../../Component/OurEvents/UpcomingEvent";
 
 const Home = () => {
     return (
-        <div>
+        <div className="">
             <Banner></Banner>
             <Cards></Cards>
             <Achivement></Achivement>

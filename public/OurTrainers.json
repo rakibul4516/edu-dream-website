@@ -1,0 +1,50 @@
+[
+    {
+        "name": "John Smith",
+        "profession": "Corporate Leadership Trainer",
+        "profile_image": "https://i.ibb.co/bKjmdNM/pexels-anna-nekrashevich-6801642.jpg",
+        "location": "New York, NY"
+    },
+    {
+        "name": "Emily Johnson",
+        "profession": "Innovative Teaching Methods Specialist",
+        "profile_image": "https://i.ibb.co/Nt6mqZn/pexels-artem-malushenko-2078149.jpg",
+        "location": "Los Angeles, CA"
+    },
+    {
+        "name": "Michael Davis",
+        "profession": "IT Training Expert",
+        "profile_image": "https://i.ibb.co/Mn4Rp2W/pexels-linkedin-sales-navigator-2182970.jpg",
+        "location": "Chicago, IL"
+    },
+    {
+        "name": "Sarah Brown",
+        "profession": "Diversity and Inclusion Trainer",
+        "profile_image": "https://i.ibb.co/PWgyJ0s/pexels-masha-raymers-2726111.jpg",
+        "location": "Houston, TX"
+    },
+    {
+        "name": "David Wilson",
+        "profession": "Public Speaking Coach",
+        "profile_image": "https://i.ibb.co/FWj9z7m/pexels-sindre-fs-1040881.jpg",
+        "location": "San Francisco, CA"
+    },
+    {
+        "name": "Lisa Martinez",
+        "profession": "Executive Leadership Coach",
+        "profile_image": "https://i.ibb.co/X5nGn5G/pexels-andrea-piacquadio-3772531.jpg",
+        "location": "Miami, FL"
+    },
+    {
+        "name": "Liyana Anderson",
+        "profession": "STEM Education Advocate",
+        "profile_image": "https://i.ibb.co/brY8DpS/pexels-marcelo-dias-2029867.jpg",
+        "location": "Boston, MA"
+    },
+    {
+        "name": "Megan Turner",
+        "profession": "Soft Skills Trainer",
+        "profile_image": "https://i.ibb.co/Gsmc4b8/pexels-ralph-rabago-3214772.jpg",
+        "location": "Seattle, WA"
+    }
+]

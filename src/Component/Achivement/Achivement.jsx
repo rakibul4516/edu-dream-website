@@ -1,7 +1,13 @@
 import { HiAcademicCap,HiUsers,HiViewColumns,HiOutlineGlobeAmericas } from "react-icons/hi2";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 const Achivement = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
     return (
-        <section style={{backgroundImage:`url('https://i.ibb.co/hyKtCXJ/pexels-andrea-piacquadio-3769021.jpg')`,backgroundSize:'cover',backgroundRepeat:'no-repeat'}} className="text-gray-600 body-font w-full h-full object-center">
+        <section data-aos="flip-up" style={{backgroundImage:`url('https://i.ibb.co/hyKtCXJ/pexels-andrea-piacquadio-3769021.jpg')`,backgroundSize:'cover',backgroundRepeat:'no-repeat'}} className="text-gray-600 body-font w-full h-full object-center">
             <div className="container px-10 lg:py-32 bg-black bg-opacity-50 h-full">
                 <div className="text-center p-4">
                     <h4 className="text-xl font-semibold text-slate-300">The Best Choice</h4>

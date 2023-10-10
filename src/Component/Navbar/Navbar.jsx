@@ -1,119 +1,138 @@
 
 import { useState } from "react";
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import './Navbar.css'
 const Navbar = () => {
     const { user, signOutUser } = useContext(AuthContext)
-    const [navbar, setNavbar] = useState(false);
     const navitems = <>
-        <div className="flex lg:flex-row flex-col gap-7 items-center text-white font-semibold">
-            <NavLink to='/' className=''>Home</NavLink>
-            <NavLink to='/about' className=''>About</NavLink>
-            <NavLink to='/contact' className=''>Contact</NavLink>
+        <div className="flex md:flex-row flex-col lg:gap-3 md:gap-1 items-center text-white font-semibold">
+            <NavLink to='/' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>Home</NavLink>
+            <NavLink to='/about' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>About</NavLink>
+            <NavLink to='/contact' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>Contact</NavLink>
             {
-                user ? <><NavLink to='/purchase' className=''>Purchase</NavLink>
-                    <NavLink to='/story' className=' '>Story</NavLink></> : null
+                user ? <><NavLink to='/purchase' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>Purchase</NavLink>
+                    <NavLink to='/story' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>Story</NavLink></> : null
             }
         </div>
     </>
 
+    const [isDropdown, setIsDropdown] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    //Logout section
+    const toggleDropdown = () => {
+        setIsDropdown(!isDropdown);
+    };
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+
+
+    // Logout section
     const HandelLogout = () => {
         signOutUser()
     }
     return (
-        <nav className="w-full bg-purple-500 shadow">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl lg:items-center lg:flex lg:px-8">
-                <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 lg:block">
-                        <a href="javascript:void(0)">
-                        <h3 className="text-3xl font-semibold">ACA<span className="text-[#ff6900]">DREAM</span></h3>
-                        </a>
-                        <div className="lg:hidden">
-                            <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                                onClick={() => setNavbar(!navbar)}
-                            >
-                                {navbar ? (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                            clipRule="evenodd"
-                                        />
-                                    </svg>
-                                ) : (
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth={2}
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            d="M4 6h16M4 12h16M4 18h16"
-                                        />
-                                    </svg>
-                                )}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${navbar ? "block" : "hidden"
-                            }`}
-                    >
-                        <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
-                            {navitems}
-                        </ul>
-
-                        <div className="mt-3 space-y-2 lg:hidden">
-                            <Link to='/login'
-                                href="javascript:void(0)"
-                                className="inline-block w-full px-4 py-2 text-center text-white bg-gray-600 rounded-md shadow hover:bg-gray-800"
-                            >
-                                Sign in
-                            </Link>
-                            <Link to='/register'
-                                href="javascript:void(0)"
-                                className="inline-block w-full px-4 py-2 text-center text-gray-800 bg-white rounded-md shadow hover:bg-gray-100"
-                            >
-                                Sign up
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="hidden space-x-2 lg:inline-block">
+        <nav className="bg-white border-gray-200 dark:bg-gray-900  relative">
+            <div className="w-full flex flex-wrap items-center justify-between mx-auto p-4 ">
+                <a href="/" className="flex items-center">
+                    <img
+                        src="https://i.ibb.co/ZJQRRxN/image-removebg-preview.png"
+                        className="h-14 mr-3"
+                    />
+                </a>
+                <div className="flex items-center md:order-2">
                     {
-                        user ? <a onClick={HandelLogout}
-                            href="javascript:void(0)"
-                            className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100 font-semibold"
-                        >
-                            LogOut
-                        </a> : <div><Link to='/login'
-                            href="javascript:void(0)"
-                            className="px-4 py-2 text-white bg-gray-600 rounded-md shadow hover:bg-gray-800 font-semibold"
-                        >
-                            Sign in
-                        </Link>
-                            <Link to='/register'
-                                href="javascript:void(0)"
-                                className="px-4 py-2 text-gray-800 bg-white rounded-md shadow hover:bg-gray-100 font-semibold ml-3"
+                        user ? <div className="">
+                            <button
+                                type="button"
+                                className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                id="user-menu-button"
+                                aria-expanded={isDropdown}
+                                onClick={toggleDropdown}
                             >
-                                Sign up
-                            </Link></div>
+                                <img
+                                    className="w-12 h-12 rounded-full"
+                                    src={user ? user?.photoURL:"https://i.ibb.co/jynfFrz/image-removebg-preview-2.png"}                                />
+                            </button>
+                            <div
+                                className={`${isDropdown ? 'block' : 'hidden'
+                                    } z-50 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 absolute right-10 top-16`}
+
+                            >
+                                <div className="px-4 py-3">
+                                    <span className="block text-sm text-gray-900 dark:text-white">
+                                        {user?.displayName}
+                                    </span>
+                                    <span className="block text-sm text-gray-500 truncate dark:text-gray-400">
+                                        {user?.email}
+                                    </span>
+                                </div>
+                                <ul className="py-2" aria-labelledby="user-menu-button">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                        >
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                        >
+                                            Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a onClick={HandelLogout}
+                                            href="#"
+                                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                                        >
+                                            Sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                            :<NavLink to='/login' className=' inline-block w-full px-4 py-2 text-center text-gray-800 bg-green-500 rounded-md shadow hover:bg-gray-100 mx-3'>Login</NavLink>
                     }
+                    {/* small Dropdown menu */}
+
+                    <button
+                        type="button"
+                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-expanded={isMenuOpen}
+                        onClick={toggleMenu}
+                    >
+                        <svg
+                            className="w-5 h-5"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 14"
+                        >
+                            <path
+                                stroke="currentColor"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M1 1h15M1 7h15M1 13h15"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div
+                    className={`${isMenuOpen ? 'block' : 'hidden'
+                        } items-center justify-between w-full md:flex md:w-auto md:order-1`}
+                >
+                    <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        {navitems}
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -123,4 +142,20 @@ const Navbar = () => {
 export default Navbar;
 
 
+// <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" className="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
+//     <span className="sr-only">Open user menu</span>
+//     <img className="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+// </button>
 
+// < !--Dropdown menu-- >
+//     <div id="dropdownAvatar" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+//         <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
+//             <div>Bonnie Green</div>
+//             <div className="font-medium truncate">name@flowbite.com</div>
+//         </div>
+//         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
+
+//             <div className="py-2">
+//                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+//             </div>
+//     </div> 

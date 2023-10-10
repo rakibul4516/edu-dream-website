@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Web Development Workshop",
-        "user_image": "user1.jpg",
+        "user_image": "https://i.ibb.co/PWgyJ0s/pexels-masha-raymers-2726111.jpg",
         "date": "12 May",
         "start_time": "10:00 AM",
         "end_time": "3:00 PM",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "title": "Digital Marketing Seminar",
-        "user_image": "user2.jpg",
+        "user_image": "https://i.ibb.co/FWj9z7m/pexels-sindre-fs-1040881.jpg",
         "date": "10 Jun",
         "start_time": "9:30 AM",
         "end_time": "12:30 PM",
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "title": "Machine Learning Bootcamp",
-        "user_image": "user3.jpg",
+        "user_image": "https://i.ibb.co/X5nGn5G/pexels-andrea-piacquadio-3772531.jpg",
         "date": "20 Jul",
         "start_time": "11:00 AM",
         "end_time": "5:00 PM",
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "title": "Language Learning Workshop",
-        "user_image": "user4.jpg",
+        "user_image": "https://i.ibb.co/brY8DpS/pexels-marcelo-dias-2029867.jpg",
         "date": "15 Aug",
         "start_time": "2:00 PM",
         "end_time": "4:30 PM",
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "title": "Financial Literacy Seminar",
-        "user_image": "user5.jpg",
+        "user_image": "https://i.ibb.co/Gsmc4b8/pexels-ralph-rabago-3214772.jpg",
         "date": "05 Sep",
         "start_time": "6:00 PM",
         "end_time": "8:00 PM",
@@ -52,7 +52,7 @@
     {
         "id": 6,
         "title": "Artificial Intelligence Workshop",
-        "user_image": "user6.jpg",
+        "user_image": "https://i.ibb.co/bKjmdNM/pexels-anna-nekrashevich-6801642.jpg",
         "date": "18 Oct",
         "start_time": "9:00 AM",
         "end_time": "4:00 PM",

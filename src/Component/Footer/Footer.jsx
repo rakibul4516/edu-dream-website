@@ -3,10 +3,11 @@ const Footer = () => {
     return (
         <footer className="px-4 divide-y bg-gray-800 text-gray-100">
             <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-                <div className="lg:w-1/3">
+                <div className="lg:w-1/3 flex flex-col-reverse justify-center items-center">
                     <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-center">
                         <h3 className="text-3xl font-semibold">ACA<span className="text-[#ff6900]">DREAM</span></h3>
                     </a>
+                    <img src="https://i.ibb.co/ZJQRRxN/image-removebg-preview.png" alt="" className="h-14 w-14 " />
                 </div>
                 <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                     <div className="space-y-3">
@@ -73,7 +74,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-6 text-sm text-center dark:text-gray-400">© 1968 Company Co. All rights reserved.</div>
+            <div className="py-6 text-sm text-center dark:text-gray-400">© 2023 Edudream All rights reserved.</div>
         </footer>
     );
 };
