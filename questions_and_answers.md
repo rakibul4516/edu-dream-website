@@ -8,8 +8,8 @@ console.log(greetign);
 - B: ReferenceError: greetign is not defined
 - C: undefined
 
-<h1>Ans: A & B both</h1>
-<p>Explaine : This code will create an empty object and assign it to the greeting variable. Then, it will log the contents of the greeting variable, which will result in an output of an empty object {} being displayed in the console || . JavaScript is case-sensitive, so greetign and greeting are treated as two different variables. Therefore, greetign is not defined, and attempting to log it will result in a ReferenceError</p>
+<h3>Ans: A & B </h3>
+<p>Explaine : declare a variable greeting with let, and it remains undefined. However, due to a typo, also create a global variable greetign and assign an empty object {} to it. When log greetign, it outputs the empty object, represented as {}. | .B because there is a typo in the variable name. Intended to create a variable named greeting and assign an empty object to it. However,  mistakenly wrote greetign instead of greeting. As a result, JavaScript doesn't recognize greetign as a defined variable, so it throws a ReferenceError</p>
 
 
 
@@ -26,8 +26,8 @@ sum(1, "2");
 - B: TypeError
 - C: "12"
 - D: 3
- <h1>Ans: C - 12</h1>
- <p> Explaine: sum function two parameter given a and b, using the + operator. a is number type value and b is string type value so a and b addition value is 12</p>
+ <h3>Ans: C - 12</h3>
+ <p> Explaine:The function sum that takes two parameters a and b and returns their sum. When you call sum(1, "2"), JavaScript performs type coercion, converting the number 1 to a string, and then concatenates the strings "1" and "2" to produce "12".</p>
 
 
 
@@ -46,8 +46,8 @@ console.log(food);
 - D: ReferenceError
 
 
- <h1>Ans: A -- ['🍕', '🍫', '🥑', '🍔'] </h1>
-<p> Explaine: food is array , this array have 4 element , info is object with a fav property initially set to the first element of the food array, which is 🍕 , update the info.fav property to 🍝 , info object property does not affect the original food array. So, when you log the food array, it remains unchanged  </p>
+ <h3>Ans: A - ['🍕', '🍫', '🥑', '🍔'] </h3>
+<p> Explaine:  First creates an array called food with four emoji elements. Then, it creates an object info with a property favoriteFood set to the first element of the food array. Then, it changes the info.favoriteFood to "🍝" but this change doesn't affect the food array. So, when console log the food array, it return the same element: ['🍕', '🍫', '🥑', '🍔']. </p>
 
 
 ###### 4. Write the correct answer from the following options and give an explanation (2-5 lines).
@@ -63,10 +63,9 @@ console.log(sayHi());
 - C: Hi there, null
 - D: ReferenceError
 
- <h1>Ans:  B-- `Hi there, undefined`</h1>
+ <h3>Ans: B- `Hi there, undefined`</h3>
 
-<p>Explaine: sayHi is a  function give a 'name' parameter, which you can use to build the greeting message. However, when you call sayHi() without passing any argument, the name parameter inside the function becomes undefined.
-So, the function attempts to concatenate undefined with the greeting string, resulting in 'Hi there, undefined'</p>
+<p>Explaine: The sayHi function expects a name as argument when it is called. But here calling sayHi() without passing any arguments. In this case function will have default value of undefined.  The function will returns "Hi there, undefined" to the console.</p>
 
 
 ###### 5. Write the correct answer from the following options and give an explanation (2-5 lines).
@@ -86,9 +85,6 @@ console.log(count);
 - D: 4
 
 
- <h>Ans:C -- 3</h>
-<p>Explaine:
- nums is an array . this array in 4 length . this array used in forEach method to iterate through each element of the array.
-array fast element is 0 so counting value is falsy .and 1, 2, 3 it is considered truthy so increment count variable by 1 .
-so false is count value is unchanged and true is count value increment by 1 for each of these value.
+ <h3>Ans: C - 3</h3>
+<p>Explaine:The loop go through each number in nums. If a number is not 0 which is considered "truthy" in JavaScript,and increment the count variable by 1. 0 is "falsy," so it doesn't increment count but 1, 2, and 3 are "truthy" so each one increments count by 1.After going through all the numbers count ends up as 3.
 </p>

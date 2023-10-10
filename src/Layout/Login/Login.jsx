@@ -5,8 +5,6 @@ import { HiEye,HiOutlineEyeSlash } from "react-icons/hi2";
 import swal from 'sweetalert';
 import { FcGoogle } from "react-icons/fc";
 const Login = () => {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
     const [findError, setFindError] = useState('')
     const [isView,setIsView] = useState(false)
     const { LoginUser, googleLogin } = useContext(AuthContext)
@@ -15,10 +13,8 @@ const Login = () => {
 
     const handelLogin = e => {
         e.preventDefault();
-        const getEmail = e.target.email.value;
-        setEmail(getEmail)
-        const getPassword = e.target.password.value;
-        setPassword(getPassword)
+        const email = e.target.email.value;
+        const password = e.target.password.value;
         setFindError('')
         //Login section
         LoginUser(email, password)

@@ -4,21 +4,16 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { HiEye, HiOutlineEyeSlash } from "react-icons/hi2";
 import swal from 'sweetalert';
 function Register() {
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
     const [isView, setIsView] = useState(false)
     const [findError, setFindError] = useState('')
-
-
-
     const { RegisterUser } = useContext(AuthContext)
     const navigate = useNavigate()
+    //Register function handel
     const handelRegister = e => {
         e.preventDefault();
-        const getEmail = e.target.email.value;
-        setEmail(getEmail)
-        const getPassword = e.target.password.value;
-        setPassword(getPassword)
+        const email = e.target.email.value;
+
+        const password = e.target.password.value;
         console.log(password.length)
 
 
@@ -27,13 +22,13 @@ function Register() {
             // Password is too short
             setFindError('Password should be at least 8 characters');
             return;
-        } else if (!(/[A-Z]/.test(password)) || !(/[@#$%^&+=!]/.test(password))) {
-            setFindError('Password should contain at least one uppercase letter (A-Z) and one special character (@#$%^&+=!)');
+        } else if (!(/[A-Z]/.test(password))) {
+            setFindError('Password should contain at least one uppercase letter (A-Z)');
             return;
-        } else {
-            setPassword(getPassword)
+        } else if (!(/[@#$%^&+=!]/.test(password))){
+            setFindError('Password should contain at least one special character (@#$%^&+=!)')
+            return
         }
-
         //Register here 
         RegisterUser(email, password)
             .then(() => {
@@ -74,7 +69,7 @@ function Register() {
                             </div>
                         </div>
                         <p className="text-red-500 text-xs pt-2">{findError}</p>
-                        <button type="submit" className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
+                        <button type="submit" className="ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
                             Create account
                         </button>
                     </form>
