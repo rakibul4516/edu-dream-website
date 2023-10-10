@@ -7,7 +7,7 @@ import './Navbar.css'
 const Navbar = () => {
     const { user, signOutUser } = useContext(AuthContext)
     const navitems = <>
-        <div className="flex md:flex-row flex-col lg:gap-3 md:gap-1 items-center text-white font-semibold">
+        <div className="flex md:flex-row flex-col lg:gap-3 md:gap-1 max-sm:gap-2 items-center text-white font-semibold">
             <NavLink to='/' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>Home</NavLink>
             <NavLink to='/about' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>About</NavLink>
             <NavLink to='/contact' className='activeroute inline-block w-full lg:px-4 px-2 py-2 text-center text-gray-800 max-md:bg-white rounded-md shadow hover:bg-gray-100'>Contact</NavLink>
@@ -40,8 +40,8 @@ const Navbar = () => {
             <div className="w-full flex flex-wrap items-center justify-between mx-auto p-4 ">
                 <a href="/" className="flex items-center">
                     <img
-                        src="https://i.ibb.co/ZJQRRxN/image-removebg-preview.png"
-                        className="h-14 mr-3"
+                        src="https://i.ibb.co/bgwWFVS/image-removebg-preview-4.png"
+                        className="h-16 w-16 mr-3"
                     />
                 </a>
                 <div className="flex items-center md:order-2">
@@ -65,7 +65,7 @@ const Navbar = () => {
                             >
                                 <div className="px-4 py-3">
                                     <span className="block text-sm text-gray-900 dark:text-white">
-                                        {user?.displayName}
+                                        {user?.displayName?user?.displayName:'User Name'}
                                     </span>
                                     <span className="block text-sm text-gray-500 truncate dark:text-gray-400">
                                         {user?.email}
@@ -140,22 +140,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-
-// <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" className="flex mx-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
-//     <span className="sr-only">Open user menu</span>
-//     <img className="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
-// </button>
-
-// < !--Dropdown menu-- >
-//     <div id="dropdownAvatar" className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-//         <div className="px-4 py-3 text-sm text-gray-900 dark:text-white">
-//             <div>Bonnie Green</div>
-//             <div className="font-medium truncate">name@flowbite.com</div>
-//         </div>
-//         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
-
-//             <div className="py-2">
-//                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-//             </div>
-//     </div> 

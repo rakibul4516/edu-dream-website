@@ -21,8 +21,7 @@ const UpcomingEvent = () => {
                         <div data-aos="fade-up" key={event.id} className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 gap-5 items-center w-11/12 mx-auto shadow my-5 bg-white rounded-md border p-5">
                             <div className="flex md:border-r-2 items-center gap-2 max-sm:mx-auto">
                                 <h2 className=" shadow p-3 rounded-full bg-white md:-mr-5 z-20 text-md text-[#ff6900] font-semibold">{event.date}</h2>
-                                {/* <img src={event.user_image} alt="user" /> */}
-                                <img alt="" className="w-12 h-12 rounded-full ri ri dark:bg-gray-500 ri ri" src={event.user_image} />
+                                <img alt="" className="w-12 h-12 rounded-full ri ri dark:bg-gray-500 ri ri object-cover" src={event.user_image} />
 
                             </div>
                             <div className="col-span-2 lg:border-r-2 flex items-center gap-2">

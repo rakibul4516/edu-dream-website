@@ -7,7 +7,7 @@ const Footer = () => {
                     <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-center">
                         <h3 className="text-3xl font-semibold">EDU<span className="text-[#ff6900]">DREAM</span></h3>
                     </a>
-                    <img src="https://i.ibb.co/ZJQRRxN/image-removebg-preview.png" alt="" className="h-14 w-14 " />
+                    <img src="https://i.ibb.co/bgwWFVS/image-removebg-preview-4.png" alt="" className="h-16 w-16 " />
                 </div>
                 <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
                     <div className="space-y-3">

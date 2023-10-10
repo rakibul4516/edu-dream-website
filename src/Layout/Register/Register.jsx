@@ -14,8 +14,6 @@ function Register() {
         const email = e.target.email.value;
 
         const password = e.target.password.value;
-        console.log(password.length)
-
 
         //password validation
         if (password.length < 8) {
@@ -27,7 +25,7 @@ function Register() {
             return;
         } else if (!(/[@#$%^&+=!]/.test(password))){
             setFindError('Password should contain at least one special character (@#$%^&+=!)')
-            return
+            return;
         }
         //Register here 
         RegisterUser(email, password)
@@ -38,7 +36,6 @@ function Register() {
             })
             .catch((error) => {
                 setFindError(error.message)
-
             });
 
     }
@@ -68,7 +65,7 @@ function Register() {
                                 </div>
                             </div>
                         </div>
-                        <p className="text-red-500 text-xs pt-2">{findError}</p>
+                        <p className="text-red-500 text-xs py-2">{findError}</p>
                         <button type="submit" className="ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
                             Create account
                         </button>

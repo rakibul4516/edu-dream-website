@@ -13,11 +13,10 @@ const PurchaseItem = () => {
             setNoEvent('No data found')
         }
     }, [])
-    console.log(events)
     return (
         <div>
             {
-                noEvent?<h1>{noEvent}</h1>:<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 items-center justify-center my-10 w-11/12 mx-auto">
+                noEvent?<div className="flex justify-center items-center h-[50vh]"><h1 className="text-xl font-semibold">{noEvent}</h1></div>:<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 items-center justify-center my-10 w-11/12 mx-auto">
                 { 
                     events.map((event) => <>
     

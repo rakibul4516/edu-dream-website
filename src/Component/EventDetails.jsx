@@ -4,9 +4,7 @@ import PurchaseData from "../../public/PurchaseData";
 
 const EventDetails = () => {
     const allEvent = DataFetch('/RegularEvent.json')
-    console.log(allEvent)
     const { id } = useParams()
-    console.log(id)
 
     //Filter selected data 
     const selected = allEvent.find(event => event.id === parseInt(id))

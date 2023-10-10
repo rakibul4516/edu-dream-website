@@ -64,7 +64,7 @@ const Login = () => {
                                 </div>
                             </div>
                         </div>
-                        <p className="text-red-500 text-xs pt-2">{findError}</p>
+                        <p className="text-red-500 text-xs py-2">{findError}</p>
                         <div className="mt-8">
                             <button type="submit" className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
                                 Create account
